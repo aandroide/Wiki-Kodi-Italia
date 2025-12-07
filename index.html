@@ -811,7 +811,7 @@
                         <p>Per informazioni complete sulla cartella dati di Kodi: <a href="https://kodi.wiki/view/Kodi_data_folder" target="_blank">Kodi data folder wiki</a></p>
                         
                         <div class="note">
-                            <strong>Nota:</strong> Le cartelle che iniziano con un punto (.) sono nascoste per impostazione predefinita. Dovrai abilitare la visualizzazione dei file nascosti per vederle.
+                            <strong>Nota:</strong> Le cartelle che iniziano con un punto (.) sono nascoste per impostazione predefinita su tutte le piattaforme. Dovrai abilitare la visualizzazione dei file nascosti per vederle.
                         </div>
                     </div>
                 </div>
@@ -831,7 +831,7 @@
                         <div class="instruction-box">
                             <h4>Tipi di file di log:</h4>
                             <ul>
-                                <li><strong>kodi.log</strong> - Il log dell'ultima sessione attiva di Kodi (quello da inviare nella maggior parte dei casi)</li>
+                                <li><strong>kodi.log</strong> - Il log dell'ultima sessione attiva di Kodi</li>
                                 <li><strong>kodi.old.log</strong> - Il log della sessione precedente</li>
                                 <li><strong>kodi_crashlog-YYYYMMDD_HHMMSS.log</strong> - Crash log con data/ora, creato quando Kodi si chiude inaspettatamente</li>
                             </ul>
@@ -839,10 +839,13 @@
                         
                         <h4>Quale file inviare?</h4>
                         <ul>
-                            <li><strong>Per problemi generali:</strong> <code>kodi.log</code></li>
-                            <li><strong>Se Kodi si è crashato:</strong> il file <code>kodi_crashlog</code> più recente</li>
-                            <li><strong>Se il problema è avvenuto nella sessione precedente:</strong> <code>kodi.old.log</code></li>
+                            <li><strong>Per problemi generali:</strong> Riproduci il problema e invia subito <code>kodi.log</code></li>
+                            <li><strong>Se Kodi si è crashato:</strong> Invia il file <code>kodi_crashlog</code> più recente</li>
                         </ul>
+                        
+                        <div class="warning">
+                            <strong>Importante:</strong> Invia sempre un log fresco! Riproduci il problema e invia immediatamente il log, evitando di inviare log vecchi che potrebbero contenere informazioni non più valide.
+                        </div>
                         
                         <div class="note">
                             <strong>Metodo più semplice:</strong> Installa l'addon "Kodi Log Uploader" dal repository ufficiale di Kodi, che carica automaticamente il log corretto e ti fornisce un link da condividere. Lo trovi in: Impostazioni > Add-on > Installa da repository > Kodi Add-on repository > Informazioni del programma > Kodi Log Uploader
@@ -1493,4 +1496,3 @@
     </script>
 </body>
 </html>
-
