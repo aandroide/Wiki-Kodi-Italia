@@ -282,6 +282,15 @@
             text-decoration: underline;
         }
         
+        .faq-answer code {
+            background: rgba(18, 178, 231, 0.15);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: var(--primary);
+            font-size: 0.95em;
+        }
+        
         .note {
             background: rgba(18, 178, 231, 0.1);
             border-left: 3px solid var(--primary);
@@ -453,7 +462,7 @@
         }
         
         .faq-answer ul li::before {
-            content: "-";
+            content: "→";
             position: absolute;
             left: 0;
             font-weight: bold;
@@ -580,7 +589,7 @@
                 <div class="faq-content">
                     <div class="faq-answer">
                         <p>Per recuperare i sottotitoli è possibile usare l'addon opensubtitles.com reperibile nella repo ufficiale di Kodi. Lo puoi trovare cliccando su impostazioni, Add-on, Installa da repository, cerca la voce sottotitoli e infine cerca e installa opensubtitles.com.</p>
-                        <p>Nota: Hanno aggiunto dei limiti di download per gli utenti che non hanno creato e configurato un account, recati sul sito  e crea un account gratuito, successivamente effettua il login tramite l'addon <a href="https://www.opensubtitles.com/it#modal-register" target="_blank">Link per la registrazione</a>.</p>
+                        <p>Nota: Hanno aggiunto dei limiti di download per gli utenti che non hanno creato e configurato un account, recati sul sito e crea un account gratuito, successivamente effettua il login tramite l'addon <a href="https://www.opensubtitles.com/it#modal-register" target="_blank">Link per la registrazione</a>.</p>
                     </div>
                 </div>
             </div>
@@ -615,10 +624,10 @@
                         
                         <div style="margin: 15px 0;">
                             <ul>
-                                <li><a href="https://t.me/thegroove360group" target="_blank">The Groove 360</a><br></li>
-                                <li><a href="https://t.me/joinchat/Lkjo-xUTCNdY8FsChZOdHg" target="_blank"> The Crew</a><br></li>
-                                <li><a href="https://t.me/mandrakodi_support" target="_blank">Mandrakodi</a><br></li>
-                                <li><a href="https://t.me/joinchat/ETXTo1LHC4mkgdM1ysbH6g" target="_blank" target="_blank">SportHD</a><br></li>
+                                <li><a href="https://t.me/thegroove360group" target="_blank">The Groove 360</a></li>
+                                <li><a href="https://t.me/joinchat/Lkjo-xUTCNdY8FsChZOdHg" target="_blank">The Crew</a></li>
+                                <li><a href="https://t.me/mandrakodi_support" target="_blank">Mandrakodi</a></li>
+                                <li><a href="https://t.me/joinchat/ETXTo1LHC4mkgdM1ysbH6g" target="_blank">SportHD</a></li>
                             </ul>
                         </div>
                         
@@ -681,7 +690,7 @@
                     <div class="faq-answer">
                         <p>Hai ancora Kodi 18.x: installa l'ultima versione di Kodi dal sito <a href="https://kodi.tv" target="_blank">kodi.tv</a>.</p>
                         <div class="note">
-                            <strong>Importante:</strong> Per il corretto funzionamento della maggior parte degli addon è necessaria la versione più recente deKodi (21+).
+                            <strong>Importante:</strong> Per il corretto funzionamento della maggior parte degli addon è necessaria la versione più recente di Kodi (21+).
                         </div>
                     </div>
                 </div>
@@ -734,28 +743,28 @@
             </div>
             
             <!-- FAQ 9 -->
-<div class="faq-card" data-category="troubleshoot">
-    <div class="faq-header">
-        <i class="fas fa-chevron-right"></i>
-        <div class="faq-number">9</div>
-        <div class="faq-title">Ho installato e avviato per la prima volta Kodi sul mio dispositivo, ma lo schermo è nero, come mai?</div>
-    </div>
-    <div class="faq-content">
-        <div class="faq-answer">
-            <p>Questo problema era comune nelle versioni precedenti di Kodi ma è stato risolto nelle versioni recenti. Se stai ancora riscontrando questo problema:</p>
-            <ul>
-                <li>Assicurati di avere l'ultima versione di Kodi</li>
-                <li>Se hai un dispositivo Android, prova a impostare il refresh del tuo schermo a 60 Hz oppure adattiva</li>
-                <li>Su PC: Premi <code>Ctrl+Shift+O</code> per aprire le impostazioni e verifica le impostazioni dello schermo</li>
-            </ul>
-            <div class="example-buttons">
-                <button class="example-btn" data-example="ambient">
-                    <i class="fas fa-eye"></i> Impostazione ambient
-                </button>
+            <div class="faq-card" data-category="troubleshoot">
+                <div class="faq-header">
+                    <i class="fas fa-chevron-right"></i>
+                    <div class="faq-number">9</div>
+                    <div class="faq-title">Ho installato e avviato per la prima volta Kodi sul mio dispositivo, ma lo schermo è nero, come mai?</div>
+                </div>
+                <div class="faq-content">
+                    <div class="faq-answer">
+                        <p>Questo problema era comune nelle versioni precedenti di Kodi ma è stato risolto nelle versioni recenti. Se stai ancora riscontrando questo problema:</p>
+                        <ul>
+                            <li>Assicurati di avere l'ultima versione di Kodi</li>
+                            <li>Se hai un dispositivo Android, prova a impostare il refresh del tuo schermo a 60 Hz oppure adattiva</li>
+                            <li>Su PC: Premi <code>Ctrl+Shift+O</code> per aprire le impostazioni e verifica le impostazioni dello schermo</li>
+                        </ul>
+                        <div class="example-buttons">
+                            <button class="example-btn" data-example="ambient">
+                                <i class="fas fa-eye"></i> Impostazione ambient
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
             
             <!-- FAQ 10 -->
             <div class="faq-card" data-category="install">
@@ -776,20 +785,86 @@
                 </div>
             </div>
             
-            <!-- FAQ 11 -->
+            <!-- FAQ 11 - NUOVA: Dove si trovano i log di Kodi -->
             <div class="faq-card" data-category="troubleshoot">
                 <div class="faq-header">
                     <i class="fas fa-chevron-right"></i>
                     <div class="faq-number">11</div>
+                    <div class="faq-title">Dove si trovano i log di Kodi?</div>
+                </div>
+                <div class="faq-content">
+                    <div class="faq-answer">
+                        <p>I file di log di Kodi si trovano nella cartella <code>temp</code> all'interno della cartella dati di Kodi. La posizione esatta varia a seconda del sistema operativo:</p>
+                        
+                        <div class="instruction-box">
+                            <h4>Percorsi dei log per Sistema Operativo:</h4>
+                            <ul>
+                                <li><strong>Android:</strong> <code>/sdcard/Android/data/org.xbmc.kodi/files/.kodi/temp/</code></li>
+                                <li><strong>Windows:</strong> <code>%APPDATA%\Kodi\temp\</code> (copia e incolla nella barra indirizzi di Esplora File)</li>
+                                <li><strong>Linux:</strong> <code>~/.kodi/temp/</code> (cartella nascosta nella home)</li>
+                                <li><strong>macOS:</strong> <code>/Users/&lt;nomeutente&gt;/Library/Application Support/Kodi/temp/</code></li>
+                                <li><strong>iOS:</strong> <code>/private/var/mobile/Library/Preferences/Kodi/temp/</code></li>
+                                <li><strong>LibreELEC/CoreELEC:</strong> <code>/storage/.kodi/temp/</code></li>
+                            </ul>
+                        </div>
+                        
+                        <p>Per informazioni complete sulla cartella dati di Kodi: <a href="https://kodi.wiki/view/Kodi_data_folder" target="_blank">Kodi data folder wiki</a></p>
+                        
+                        <div class="note">
+                            <strong>Nota:</strong> Su Linux e macOS le cartelle che iniziano con un punto (.) sono nascoste per impostazione predefinita. Dovrai abilitare la visualizzazione dei file nascosti per vederle.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ 12 - NUOVA: Come recuperare i file di log -->
+            <div class="faq-card" data-category="troubleshoot">
+                <div class="faq-header">
+                    <i class="fas fa-chevron-right"></i>
+                    <div class="faq-number">12</div>
+                    <div class="faq-title">Come recuperare i file di log e quale inviare?</div>
+                </div>
+                <div class="faq-content">
+                    <div class="faq-answer">
+                        <p>I file di log si trovano nella cartella <code>.kodi/temp/</code> (vedi FAQ 11 per la posizione completa). Troverai diversi tipi di file:</p>
+                        
+                        <div class="instruction-box">
+                            <h4>Tipi di file di log:</h4>
+                            <ul>
+                                <li><strong>kodi.log</strong> - Il log dell'ultima sessione attiva di Kodi (quello da inviare nella maggior parte dei casi)</li>
+                                <li><strong>kodi.old.log</strong> - Il log della sessione precedente</li>
+                                <li><strong>kodi_crashlog-YYYYMMDD_HHMMSS.log</strong> - Crash log con data/ora, creato quando Kodi si chiude inaspettatamente</li>
+                            </ul>
+                        </div>
+                        
+                        <h4>Quale file inviare?</h4>
+                        <ul>
+                            <li><strong>Per problemi generali:</strong> <code>kodi.log</code></li>
+                            <li><strong>Se Kodi si è crashato:</strong> il file <code>kodi_crashlog</code> più recente</li>
+                            <li><strong>Se il problema è avvenuto nella sessione precedente:</strong> <code>kodi.old.log</code></li>
+                        </ul>
+                        
+                        <div class="note">
+                            <strong>Metodo più semplice:</strong> Installa l'addon "Kodi Log Uploader" dal repository ufficiale di Kodi, che carica automaticamente il log corretto e ti fornisce un link da condividere. Lo trovi in: Impostazioni > Add-on > Installa da repository > Kodi Add-on repository > Informazioni del programma > Kodi Log Uploader
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ 13 - ex 11 -->
+            <div class="faq-card" data-category="troubleshoot">
+                <div class="faq-header">
+                    <i class="fas fa-chevron-right"></i>
+                    <div class="faq-number">13</div>
                     <div class="faq-title">Mi compare "IMPOSSIBILE RIPRODURRE CONTROLLARE LOG", cosa devo fare?</div>
                 </div>
                 <div class="faq-content">
                     <div class="faq-answer">
-                        <p>Dal repo di Kodi installa Kodi LogFile Upload e scrivici qui il link che ti restituisce.</p>
+                        <p>Dal repo di Kodi installa "Kodi Log Uploader" e scrivici qui il link che ti restituisce (vedi FAQ 12 per maggiori dettagli sui file di log).</p>
                         <p>Passaggi alternativi:</p>
                         <ul>
                             <li>Vai in Impostazioni > Sistema > Registrazione Eventi</li>
-                            <li>Abilita registrazione registro di debug</li>
+                            <li>Abilita "Registrazione registro di debug"</li>
                             <li>Riproduci l'errore</li>
                             <li>Invia il file di log</li>
                         </ul>
@@ -797,41 +872,41 @@
                 </div>
             </div>
             
-            <!-- FAQ 12 -->
+            <!-- FAQ 14 - ex 12 -->
             <div class="faq-card" data-category="network">
                 <div class="faq-header">
                     <i class="fas fa-chevron-right"></i>
-                    <div class="faq-number">12</div>
+                    <div class="faq-number">14</div>
                     <div class="faq-title">Dove posso trovare una buona VPN?</div>
                 </div>
                 <div class="faq-content">
                     <div class="faq-answer">
                         <p>Dipende dall'uso che vuoi farne. Per geolocalizzarti in un paese diverso da quello in cui ti stai connettendo ad internet, devi provare la VPN più efficente per il paese in cui ti trovi e per il paese in cui vuoi connetterti.</p>
-                        <p>Se vuoi nascondere la tua identità o non giocare al piccolo hacker, non esistono VPN che possano legalmente fare al caso tuo, tutte le VPN in commercio loggano i tuoi accessi e li consegnano alle autorità dietro richieste anche molto blande. In ogni caso, al netto di piccole differenze, tutti i maggiori provider di VPN sono più o meno equivalenti nelle stesse fasce di prezzo.<a href="https://torrentfreak-com.translate.goog/best-vpn-anonymous-no-logging/?_x_tr_sl=auto&_x_tr_tl=it&_x_tr_hl=it&_x_tr_pto=wapp" target="_blank">Qui</a> trovi un articolo esaustivo sull'argomento.<br></li></p>
+                        <p>Se vuoi nascondere la tua identità o non giocare al piccolo hacker, non esistono VPN che possano legalmente fare al caso tuo, tutte le VPN in commercio loggano i tuoi accessi e li consegnano alle autorità dietro richieste anche molto blande. In ogni caso, al netto di piccole differenze, tutti i maggiori provider di VPN sono più o meno equivalenti nelle stesse fasce di prezzo. <a href="https://torrentfreak-com.translate.goog/best-vpn-anonymous-no-logging/?_x_tr_sl=auto&_x_tr_tl=it&_x_tr_hl=it&_x_tr_pto=wapp" target="_blank">Qui</a> trovi un articolo esaustivo sull'argomento.</p>
                     </div>
                 </div>
             </div>
             
-            <!-- FAQ 13 -->
+            <!-- FAQ 15 - ex 13 -->
             <div class="faq-card" data-category="optimize">
                 <div class="faq-header">
                     <i class="fas fa-chevron-right"></i>
-                    <div class="faq-number">13</div>
+                    <div class="faq-number">15</div>
                     <div class="faq-title">Il mio Kodi è lento, cancellando la cache si velocizzerà?</div>
                 </div>
                 <div class="faq-content">
                     <div class="faq-answer">
                         <p>Kodi scarica tutte le informazioni dei film che aggiungi alla libreria e li salva nei dati, quindi cancellare la cache non risolve molto. La cache viene usata molto dagli addon, quindi rischi di rallentarne il funzionamento. Non cancellare i dati dalle impostazioni memoria dell'app (Android) perché resetti Kodi alle impostazioni di fabbrica.</p>
-                        <p>Per tenerlo pulito basta cancellare alcune cartelle non essenziali come Thumbnail (anteprime) e Packages (zip degli addon aggiornati). Questa operazione si può fare manualmente accedendo alla <a href="https://kodi.wiki/view/Kodi_data_folder" target="_blank">cartella principale di Kodi</a> o usando addon di manutenzione come quello di The Groove (!addons) oppure <a href="https://t.me/kodiitalia/408923" target="_blank">Optiklean 2025</a> Sito di riferimento: <a href="https://www.digitalking.it/en/2025/05/23/kodi-optiklean-addon-review/" target="_blank">Descrizione Optiklean</a> oppure <a href="https://t.me/kodiitalia/379398" target="_blank">Rock Cleane</a>.</p>
+                        <p>Per tenerlo pulito basta cancellare alcune cartelle non essenziali come Thumbnail (anteprime) e Packages (zip degli addon aggiornati). Questa operazione si può fare manualmente accedendo alla <a href="https://kodi.wiki/view/Kodi_data_folder" target="_blank">cartella principale di Kodi</a> o usando addon di manutenzione come quello di The Groove (!addons) oppure <a href="https://t.me/kodiitalia/408923" target="_blank">Optiklean 2025</a> Sito di riferimento: <a href="https://www.digitalking.it/en/2025/05/23/kodi-optiklean-addon-review/" target="_blank">Descrizione Optiklean</a> oppure <a href="https://t.me/kodiitalia/379398" target="_blank">Rock Cleaner</a>.</p>
                     </div>
                 </div>
             </div>
             
-            <!-- FAQ 14 -->
+            <!-- FAQ 16 - ex 14 -->
             <div class="faq-card" data-category="troubleshoot">
                 <div class="faq-header">
                     <i class="fas fa-chevron-right"></i>
-                    <div class="faq-number">14</div>
+                    <div class="faq-number">16</div>
                     <div class="faq-title">Kodi aggiunge la copertina errata al film o serie TV che ho aggiunto in libreria, come mai?</div>
                 </div>
                 <div class="faq-content">
@@ -848,11 +923,11 @@
                 </div>
             </div>
             
-            <!-- FAQ 15 -->
+            <!-- FAQ 17 - ex 15 -->
             <div class="faq-card" data-category="troubleshoot">
                 <div class="faq-header">
                     <i class="fas fa-chevron-right"></i>
-                    <div class="faq-number">15</div>
+                    <div class="faq-number">17</div>
                     <div class="faq-title">Su PC Kodi mi si avvia solo in modalità finestra e non mi va più in fullscreen, come risolvo?</div>
                 </div>
                 <div class="faq-content">
@@ -869,11 +944,11 @@
                 </div>
             </div>
             
-            <!-- FAQ 16 -->
+            <!-- FAQ 18 - ex 16 -->
             <div class="faq-card" data-category="troubleshoot">
                 <div class="faq-header">
                     <i class="fas fa-chevron-right"></i>
-                    <div class="faq-number">16</div>
+                    <div class="faq-number">18</div>
                     <div class="faq-title">Kodi non mi riproduce più l'audio, come risolvo?</div>
                 </div>
                 <div class="faq-content">
@@ -889,11 +964,11 @@
                 </div>
             </div>
             
-            <!-- FAQ 17 - Elementum -->
+            <!-- FAQ 19 - ex 17 - Elementum -->
             <div class="faq-card" data-category="troubleshoot">
                 <div class="faq-header">
                     <i class="fas fa-chevron-right"></i>
-                    <div class="faq-number">17</div>
+                    <div class="faq-number">19</div>
                     <div class="faq-title">Elementum non mi funziona, rimane su "si sta avviando"</div>
                 </div>
                 <div class="faq-content">
@@ -918,11 +993,11 @@
                 </div>
             </div>
             
-            <!-- FAQ 18 -->
+            <!-- FAQ 20 - ex 18 -->
             <div class="faq-card" data-category="troubleshoot">
                 <div class="faq-header">
                     <i class="fas fa-chevron-right"></i>
-                    <div class="faq-number">18</div>
+                    <div class="faq-number">20</div>
                     <div class="faq-title">Ho Kodi che mi dà problemi dopo l'aggiornamento, come mai?</div>
                 </div>
                 <div class="faq-content">
@@ -942,16 +1017,16 @@
                 </div>
             </div>
             
-            <!-- FAQ 19 - Disco modem -->
+            <!-- FAQ 21 - ex 19 - Disco modem -->
             <div class="faq-card" data-category="network">
                 <div class="faq-header">
                     <i class="fas fa-chevron-right"></i>
-                    <div class="faq-number">19</div>
+                    <div class="faq-number">21</div>
                     <div class="faq-title">Come posso accedere a un hard disk collegato al modem/router da Kodi?</div>
                 </div>
                 <div class="faq-content">
                     <div class="faq-answer">
-                        <p>Devi abilitare SMBv1: Kodi > Impostazioni > Servioni > Abilita modalità esperto > Imposta la versione minima e massima su SMBv1 e riavvia (2 volte). Poi abilita le fonti da Impostazioni > Gestione file > Aggiungi sorgente > inserisci il percorso di rete del modem.</p>
+                        <p>Devi abilitare SMBv1: Kodi > Impostazioni > Servizi > Abilita modalità esperto > Imposta la versione minima e massima su SMBv1 e riavvia (2 volte). Poi abilita le fonti da Impostazioni > Gestione file > Aggiungi sorgente > inserisci il percorso di rete del modem.</p>
                         <div class="note">
                             <strong>Importante:</strong> Per alcuni operatori: Abilita "Condivisione file" nelle impostazioni del modem. Potrebbe essere necessario configurare impostazioni diverse a seconda del tuo operatore.
                         </div>
@@ -959,11 +1034,11 @@
                 </div>
             </div>
             
-            <!-- FAQ 20 - Impostazioni nascoste -->
+            <!-- FAQ 22 - ex 20 - Impostazioni nascoste -->
             <div class="faq-card" data-category="troubleshoot">
                 <div class="faq-header">
                     <i class="fas fa-chevron-right"></i>
-                    <div class="faq-number">20</div>
+                    <div class="faq-number">22</div>
                     <div class="faq-title">Ho disattivato per errore una voce nel menu principale, come la ripristino?</div>
                 </div>
                 <div class="faq-content">
@@ -982,11 +1057,11 @@
                 </div>
             </div>
             
-            <!-- FAQ 21 -->
+            <!-- FAQ 23 - ex 21 -->
             <div class="faq-card" data-category="troubleshoot">
                 <div class="faq-header">
                     <i class="fas fa-chevron-right"></i>
-                    <div class="faq-number">21</div>
+                    <div class="faq-number">23</div>
                     <div class="faq-title">Ho installato Elementum, dalla ricerca non trova niente, cosa faccio?</div>
                 </div>
                 <div class="faq-content">
@@ -1003,11 +1078,11 @@
                 </div>
             </div>
             
-            <!-- FAQ 22 - Buffer -->
+            <!-- FAQ 24 - ex 22 - Buffer -->
             <div class="faq-card" data-category="streaming">
                 <div class="faq-header">
                     <i class="fas fa-chevron-right"></i>
-                    <div class="faq-number">22</div>
+                    <div class="faq-number">24</div>
                     <div class="faq-title">Continua a comparirmi il caricamento Buffer, cosa vuol dire?</div>
                 </div>
                 <div class="faq-content">
@@ -1027,11 +1102,11 @@
                 </div>
             </div>
             
-            <!-- FAQ 23 - Connessione lenta -->
+            <!-- FAQ 25 - ex 23 - Connessione lenta -->
             <div class="faq-card" data-category="streaming">
                 <div class="faq-header">
                     <i class="fas fa-chevron-right"></i>
-                    <div class="faq-number">23</div>
+                    <div class="faq-number">25</div>
                     <div class="faq-title">Lo streaming mi dà "connessione lenta", ma come mai?</div>
                 </div>
                 <div class="faq-content">
@@ -1052,11 +1127,11 @@
                 </div>
             </div>
             
-            <!-- FAQ 24 - Risoluzione video -->
+            <!-- FAQ 26 - ex 24 - Risoluzione video -->
             <div class="faq-card" data-category="streaming">
                 <div class="faq-header">
                     <i class="fas fa-chevron-right"></i>
-                    <div class="faq-number">24</div>
+                    <div class="faq-number">26</div>
                     <div class="faq-title">Ho notato che la maggior parte dei contenuti hanno una risoluzione massima di 720p e in alcuni casi 1080p, perché?</div>
                 </div>
                 <div class="faq-content">
@@ -1077,11 +1152,11 @@
                 </div>
             </div>
             
-            <!-- FAQ 25 -->
+            <!-- FAQ 27 - ex 25 -->
             <div class="faq-card" data-category="network">
                 <div class="faq-header">
                     <i class="fas fa-chevron-right"></i>
-                    <div class="faq-number">25</div>
+                    <div class="faq-number">27</div>
                     <div class="faq-title">Come mai quando avvio Kodi compare "IMPOSSIBILE CONNETTERSI AL SERVER DI RETE", soluzioni?</div>
                 </div>
                 <div class="faq-content">
@@ -1098,25 +1173,25 @@
                 </div>
             </div>
             
-            <!-- FAQ 26 -->
+            <!-- FAQ 28 - ex 26 -->
             <div class="faq-card" data-category="optimize">
                 <div class="faq-header">
                     <i class="fas fa-chevron-right"></i>
-                    <div class="faq-number">26</div>
+                    <div class="faq-number">28</div>
                     <div class="faq-title">Come mai quando avvio Kodi compare "server comunicazione remota avvio fallito", soluzioni?</div>
                 </div>
                 <div class="faq-content">
                     <div class="faq-answer">
-                        <p>Si tratta del servizio del controllo remoto, basta disattivarlo da Impostazioni Servizi</p>
+                        <p>Si tratta del servizio del controllo remoto, basta disattivarlo da Impostazioni > Servizi > Controllo</p>
                     </div>
                 </div>
             </div>
             
-            <!-- FAQ 27 - DNS -->
+            <!-- FAQ 29 - ex 27 - DNS -->
             <div class="faq-card" data-category="network">
                 <div class="faq-header">
                     <i class="fas fa-chevron-right"></i>
-                    <div class="faq-number">27</div>
+                    <div class="faq-number">29</div>
                     <div class="faq-title">Perché devo cambiare i miei DNS e come lo faccio?</div>
                 </div>
                 <div class="faq-content">
@@ -1134,7 +1209,7 @@
                         <h3>DNS consigliati:</h3>
                         <div class="dns-grid">
                             <div class="dns-card">
-                                <h4><i class="fas fa-ipv4"></i> IPv4 - Google</h4>
+                                <h4><i class="fas fa-network-wired"></i> IPv4 - Google</h4>
                                 <ul>
                                     <li>Primario: 8.8.8.8</li>
                                     <li>Secondario: 8.8.4.4</li>
@@ -1142,7 +1217,7 @@
                             </div>
                             
                             <div class="dns-card">
-                                <h4><i class="fas fa-ipv6"></i> IPv6 - Google</h4>
+                                <h4><i class="fas fa-network-wired"></i> IPv6 - Google</h4>
                                 <ul>
                                     <li>Primario: 2001:4860:4860::8888</li>
                                     <li>Secondario: 2001:4860:4860::8844</li>
@@ -1150,7 +1225,7 @@
                             </div>
                             
                             <div class="dns-card">
-                                <h4><i class="fas fa-ipv4"></i> IPv4 - Cloudflare</h4>
+                                <h4><i class="fas fa-network-wired"></i> IPv4 - Cloudflare</h4>
                                 <ul>
                                     <li>Primario: 1.1.1.1</li>
                                     <li>Secondario: 1.0.0.1</li>
@@ -1158,7 +1233,7 @@
                             </div>
                             
                             <div class="dns-card">
-                                <h4><i class="fas fa-ipv6"></i> IPv6 - Cloudflare</h4>
+                                <h4><i class="fas fa-network-wired"></i> IPv6 - Cloudflare</h4>
                                 <ul>
                                     <li>Primario: 2606:4700:4700::1111</li>
                                     <li>Secondario: 2606:4700:4700::1001</li>
@@ -1200,7 +1275,6 @@
                                     </button>
                                 </div>
                             </div>
-                            
                         </div>
                         
                         <!-- Sezione per Wind Tre -->
@@ -1304,22 +1378,22 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
             
-            <!-- FAQ 28 -->
+            <!-- FAQ 30 - ex 28 -->
             <div class="faq-card" data-category="install">
                 <div class="faq-header">
                     <i class="fas fa-chevron-right"></i>
-                    <div class="faq-number">28</div>
+                    <div class="faq-number">30</div>
                     <div class="faq-title">Come mai non posso installare la lingua italiana?</div>
                 </div>
                 <div class="faq-content">
                     <div class="faq-answer">
-                        <p>Quando non fa cambiare lingua dalle impostazioni va installata manualmente dal repository di Kodi: Addons > Instal from repository > look and feels > languages > italian. Questo capita a causa di un bug noto, in alcuni casi appena installato kodi non riesce a connetteri alla Repository di Kodi,causando questo inconveniente.</p>
+                        <p>Quando non fa cambiare lingua dalle impostazioni va installata manualmente dal repository di Kodi: Addons > Install from repository > Look and feels > Languages > Italian. Questo capita a causa di un bug noto, in alcuni casi appena installato kodi non riesce a connettersi alla Repository di Kodi, causando questo inconveniente.</p>
                     </div>
                 </div>
             </div>
+        </div>
+        
         <footer>
             <p>© 2025 Comunità Italiana Kodi | t.me/kodiitalia</p>
             <p>Le informazioni sono fornite a scopo educativo. Rispetta le leggi sul copyright del tuo paese.</p>
@@ -1419,8 +1493,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
